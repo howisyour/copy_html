@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+  <title> HMTL0717共通課程作業</title>
+  <link rel="stylesheet" href="resume.css">
+
+  <link rel="shortcut icon" href="download.ico">
+</head>
+
+<body>
+
+  <script src="/scripts/jquery-1.5.2.min.js"></script>
+  <div id="c"> <a href="https://onlyoneafrica.tw/"><img src="nononame.png" style="width: 40vw;"></a>
+  </div>
+
+  <div class="toprea">
+    <ul>
+
+      <li class="change"><a href="html0717homework.html">首頁</a></li>
+      <li class="change text3"><a href="https://onlyoneafrica.tw/destinations/">目的地</a>
+        <ul>
+          <li><a href="https://onlyoneafrica.tw/kenya/">肯亞的旅遊資訊</a></li>
+          <li><a href="https://onlyoneafrica.tw/tanzania/">塔尚尼亞的旅遊資訊</a></li>
+          <li><a href="https://onlyoneafrica.tw/south-africa/">南非旅遊資訊</a></li>
+          <li><a href="https://onlyoneafrica.tw/namibia/">納米比亞旅遊資訊</a></li>
+          <li><a href="https://onlyoneafrica.tw/rwanda/">盧旺達旅遊資訊</a></li>
+          <li><a href="https://onlyoneafrica.tw/uganda/">烏干達旅遊資訊</a></li>
+          <li><a href="https://onlyoneafrica.tw/uganda/">贊比亞旅遊資訊</a></li>
+          <li><a href="https://onlyoneafrica.tw/zimbabwe/">津巴布韋旅遊資訊</a></li>
+          <li><a href="https://onlyoneafrica.tw/botswana/">波札那共和國旅遊資訊</a></li>
+          <li><a href="https://onlyoneafrica.tw/ethiopia/">埃塞俄比亞旅遊資訊</a></li>
+        </ul>
+      </li>
+
+      <li class="change"><a href="https://onlyoneafrica.tw/tours/">行程介紹</a></li>
+      <li class="change"><a href="https://onlyoneafrica.tw/hotels/">住宿介紹</a></li>
+
+      <li class="change  text3"><a href="https://onlyoneafrica.tw/travel-informations/">相關資訊</a>
+        <ul>
+          <li><a href="https://onlyoneafrica.tw/travel-informations/">行前注意事項</a></li>
+          <li><a href="https://onlyoneafrica.tw/safari-tour-point/">onlyone travel十大堅持</a></li>
+          <li><a href="https://onlyoneafrica.tw/greatmigrationblog/">什麼是動物大遷徒？</a></li>
+          <li><a href="https://onlyoneafrica.tw/safaricampvssafarilodge/">營地帳篷vs渡假飯店</a></li>
+          <li><a href="https://onlyoneafrica.tw/african-animals-list/">野生動物園可以看到的動物有哪些</a></li>
+          <li><a href="https://onlyoneafrica.tw/faq/">非洲旅行常見問題</a></li>
+        </ul>
+      </li>
+
+      <li class="change text3"><a href="https://onlyoneafrica.tw/about-us/">關於我們</a>
+        <ul>
+          <li><a href="https://onlyoneafrica.tw/staff/">工作人員介紹</a></li>
+          <li><a href="https://onlyoneafrica.tw/category/staffblog/">工作人員部落格</a></li>
+          <li><a href="https://onlyoneafrica.tw/flow/">非洲旅行出發前的流程</a></li>
+          <li><a href="https://onlyoneafrica.tw/condition/">旅行條款</a></li>
+
+
+        </ul>
+      </li>
+
+      <li class="change"><a href="https://onlyoneafrica.tw/contact/">聯繫我們</a></li>
+      <li class="change text3"><a href="file:///Users/imac-1682/Desktop/0702/copytravel.html">Languages</a>
+        <ul class="langimg">
+          <li><a href="https://onlyone.africa/"><img src="american.png">English</a></li>
+          <li><a href="https://onlyoneafrica.tw/tanzania/"><img src="tw.png">繁體中文</a></li>
+          <li><a href="https://onlyoneafrica.com/"><img src="jp.png">日本語</a></li>
+          <li><a href="https://onlyoneafrica.kr/"><img src="kor.png">한국어</a></li>
+          <li><a href="https://onlyoneafrica.tw/rwanda/"><img src="sp.png">Español</a></li>
+        </ul>
+
+
+
+
+
+      </li>
+      <!-- 放大鏡按鈕 -->
+      <li>
+        <input type="checkbox" id="toggleSearch" hidden>
+        <label for="toggleSearch" id="searchLabel" style="cursor: pointer;">
+          <img src="magnifier.png">
+        </label>
+      <li class="searchInputLi" id="searchInputLi">
+        <form id="searchForm" action="https://onlyoneafrica.tw/" method="get" class="searchContainer">
+          <input type="text" name="s" class="searchInput" id="searchInput" placeholder="搜尋...">
+          <button type="button" id="closeSearch" class="closeBtn">✖</button>
+
+        </form>
+      </li>
+      </li>
+
+
+
+    </ul>
+  </div>
+
+  <div class="bmiddle">
+    <a href="javascript:void(0);" onclick="showVideoOverlay()"><img src="a3875b198a1681c2d0fcc137cfc6e0af.jpg"
+        width="100%" height="700px "></a>
+    <div id="videoOverlay" class="video-overlay">
+      <div class="video-container" id="videoContainer">
+        <button class="close-btn" onclick="closeVideoOverlay()">✖</button>
+        <button class="fullscreen-btn" onclick="goFullscreen()">口</button>
+        <iframe id="videoFrame" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+    </div>
+
+
+    <div class="center-wrapper">
+      <div class="africa-text">
+        <h1>性能殿堂</h1>
+        <p>在這裡，我們重新定義速度與奢華。每一輛跑車不僅是性能的巔峰之作，更是頂尖工藝與工程美學的完美結晶。</p>
+        <p>我們深入探討各個傳奇品牌的歷史傳承、剖析其背後的創新科技，並為您呈現最真實的駕馭感受。</p>
+        <p>從義大利的熱情奔放到德意志的精密嚴謹，再到英倫的紳士暴力，我們帶您鑑賞的不只是一部車，而是一種生活態度與極致品味的象徵。</p>
+        <p>歡迎品鑑，探索汽車工藝的無限可能。<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="box">
+
+
+    <!--摩洛哥旅行部分  -->
+    <div class="travelbox">
+
+      <h1>最新旅遊</h1>
+      <p>來自OnlyOne Travel 的最新旺季旅遊資訊。</p>
+      <p>目前正踴躍接受報名中！</p>
+
+
+
+    </div>
+
+
+
+
+
+
+    <div class="box1">
+      <a href="https://onlyoneafrica.tw/journeys/morocco-12-day-tour/">
+        <div class="image-wrapper"><img src="garellyMorroco17.jpg" class="cover">
+          <div class="overlay"></div>
+        </div>
+      </a>
+      <div class="box1text">
+        <p class="wood"><strong>摩洛哥</strong></p>
+        <p class="wood"><strong>經典旅遊</strong></p>
+        <p class="red"><i>當地出發12日遊</i></p>
+      </div>
+    </div>
+
+
+
+    <div class="box1">
+      <a href="https://onlyoneafrica.tw/journeys/morocco-10-day/">
+        <div class="image-wrapper"><img src="hotelMoroccoCamp01.jpg" class="cover">
+          <div class="overlay"></div>
+        </div>
+      </a>
+      <div class="box1text">
+        <p class="wood"><strong>摩洛哥</strong></p>
+        <p class="wood"><strong>經典旅遊</strong></p>
+        <p class="red"><i>當地出發10日遊</i></p>
+      </div>
+    </div>
+
+    <div class="box1">
+      <a href="https://onlyoneafrica.tw/journeys/morocco-7days/">
+        <div class="image-wrapper"><img src="tourMR0107.jpg" class="cover">
+          <span class="overlay"></span>
+        </div>
+        <div class="box1text">
+      </a>
+      <p class="wood"><strong>摩洛哥</strong></p>
+      <p class="wood"><strong>經典旅遊</strong></p>
+      <p class="red"><i>當地出發7日遊</i></p>
+
+    </div>
+  </div>
+
+
+
+  <div class="box1">
+    <a href="https://onlyoneafrica.tw/journeys/black-panther-7-days-tour/">
+      <div class="image-wrapper"><img src="DSC_8563.jpg" class="cover">
+        <div class="overlay"></div>
+      </div>
+    </a>
+    <div class="box1text">
+      <p class="wood"><strong>肯亞</strong></p>
+      <p class="wood"><strong>黑豹探索七日</strong></p>
+      <p class="red"><i>當地出發7日遊</i></p>
+    </div>
+  </div>
+
+  <div class="box1">
+    <a href="https://onlyoneafrica.tw/journeys/namibia-8days-tour/">
+      <div class="image-wrapper"><img src="namibia-g21e96c682_1920.jpg" class="cover">
+        <div class="overlay"></div>
+      </div>
+    </a>
+    <div class="box1text">
+      <p class="wood"><strong>納米比亞</strong></p>
+      <p class="wood"><strong>納米比亞八日</strong></p>
+      <p class="red"><i>當地出發八日遊</i></p>
+    </div>
+  </div>
+
+
+  <div class="box1">
+    <a href="https://onlyoneafrica.tw/journeys/tanzania-6days-tour/">
+      <div class="image-wrapper"><img src="garellyTanzania18.jpg" class="cover">
+        <div class="overlay"></div>
+      </div>
+    </a>
+    <div class="box1text">
+      <p class="wood"><strong>坦尚尼亞</strong></p>
+      <p class="wood"><strong>坦尚尼亞六日</strong></p>
+      <p class="red"><i>當地出發6日遊</i></p>
+    </div>
+  </div>
+
+
+
+  <div class="box1">
+    <a href="https://onlyoneafrica.tw/journeys/capetownkruger7days/">
+      <div class="image-wrapper"><img src="tourCapetownKruger04.jpg" class="cover">
+        <div class="overlay"></div>
+      </div>
+    </a>
+    <div class="box1text">
+      <p class="wood"><strong>南非</strong></p>
+      <p class="wood"><strong>開普敦和克魯格國家公園</strong></p>
+      <p class="red"><i>當地出發7日遊</i></p>
+
+    </div>
+  </div>
+
+  <div class="box1">
+    <a href="https://onlyoneafrica.tw/journeys/gorilla4days-sgorssr/">
+      <div class="image-wrapper"><img src="silverback-gorilla-.jpg" class="cover">
+        <div class="overlay"></div>
+      </div>
+    </a>
+    <div class="box1text">
+      <p class="wood"><strong>烏干達</strong></p>
+      <p class="wood"><strong>尋找大猩猩四日之旅</strong></p>
+      <p class="red"><i>當地出發4日遊</i></p>
+
+    </div>
+  </div>
+
+  <div class="box1">
+    <a href="https://onlyoneafrica.tw/journeys/mountkilimanjaro8days-skilissr/">
+      <div class="image-wrapper"><img src="tourki00114.jpg" class="cover">
+        <div class="overlay"></div>
+      </div>
+    </a>
+    <div class="box1text">
+      <p class="wood"><strong>坦尚尼亞</strong></p>
+      <p class="wood"><strong>攀登吉力馬札羅山</strong></p>
+      <p class="red"><i>當地出發八日遊</i></p>
+    </div>
+  </div>
+
+
+
+
+  <p style="text-align:center"></p>
+  <!--    旅行按鈕         -->
+
+  <div class="middle">
+
+    <a href="http://onlyoneafrica.tw/tours/">
+      <button>
+        查看所有旅行日程
+      </button>
+    </a>
+  </div>
+
+  </div>
+
+
+
+  <div class="box4">
+    <a href="https://onlyoneafrica.tw/about-us/"> <img style="max-width: 100%;margin-top: 150px;"
+        src="Aboutus-OOA-TW.jpg"></a>
+  </div>
+  <div
+    style="padding-top:6%;padding-bottom: 10%    ;background-color: rgb(213, 206, 176)     ;width: 100vw;color: #ffffffc4;text-align: center;">
+    <h4>ONLYONE TRAVEL 不僅可以為各種旅行團提供服務<br>
+      我們還可以根據您的預算和目的地<br>
+      訂製專屬您自己的旅行計劃</h4>
+    <br>
+    <br>
+    <span id="haha">
+      <a style="align-items: center;" href="http://onlyoneafrica.tw/tours/">
+        <button>
+          <span style="padding: 10px"><i>🤍</i></span>關於客製化行程，請隨時與我們聯繫!
+        </button>
+      </a>
+    </span>
+
+    <div style="padding-top: 5%;">
+      <div style="position: absolute;text-align: left;margin-left: 10%;">
+
+        <img src="nononame.png" style="height: 50px">
+
+      </div>
+    </div>
+    <div style="text-align:left ;height: 4vh;padding-left:  70%;position: absolute;">
+      <a id="line" href="https://line.me/R/ti/p/@701vhrsm?ts=06071842&oat_content=url">
+        <img src="en.png">
+      </a>
+      <div id="raining">
+        <div style="color: gray;">ONLYONE TRAVEL</div>
+        <div style="color: gray;"> Email:<span class="raining"> <a
+              href="taiwan@onlyone.travel">taiwan@onlyone.travel</a></span></div>
+        <div style="color: gray;">Line: <span class="raining"> <a href="taiwan@onlyone.travel">@onlyonetravel</a></span>
+        </div>
+
+      </div>
+    </div>
+    <div class="intro">
+      <span style="padding-right: 50px;">
+        <a href="https://www.facebook.com/onlyonetraveltw/">
+          <img src="facebook-8-edited-1.png" style="height: 8vh;"> </a>
+      </span>
+      <a href="https://www.instagram.com/onlyonetravel.tw/">
+        <img src="instagram-6.png" style="height: 8vh;"></a>
+
+      <div style="color: grey;">
+        <h4>ONLYONE TRAVEL<br>
+          taiwan@onlyone.travel</h4>
+      </div>
+
+    </div>
+
+  </div>
+  <div style="margin-top: 20px;text-align: center;line-height: 40px;font-size:12px ;color:rgb(212, 212, 212);">
+    Copyright 2017 - 2025 onlyone africa | All Rights Reserved</div>
+
+
+  </div>
+
+
+
+  <script>
+
+    const cb = document.getElementById('toggleSearch');
+    const changes = document.querySelectorAll('.change');
+    const si = document.getElementById('searchInputLi');
+    const closeBtn = document.getElementById('closeSearch');
+
+
+    cb.addEventListener('change', () => {
+      if (cb.checked) {
+        changes.forEach(li => li.classList.add('hide'));
+        si.classList.add('show');
+        setTimeout(() => document.getElementById('searchInput').focus(), 300);
+      } else {
+        changes.forEach(li => li.classList.remove('hide'));
+        si.classList.remove('show');
+      }
+    });
+
+    closeBtn.addEventListener('click', () => {
+      cb.checked = false;
+      cb.dispatchEvent(new Event('change'));
+    });
+
+
+
+    function showVideoOverlay() {
+      const overlay = document.getElementById('videoOverlay');
+      const iframe = document.getElementById('videoFrame');
+      const container = document.getElementById('videoContainer');
+
+      container.classList.remove('visible');
+      overlay.classList.remove('hide');
+      overlay.style.display = 'flex';
+      overlay.classList.add('show');
+
+
+      overlay.addEventListener('animationend', function handler(e) {
+        if (e.animationName === 'fadeInBackground') {
+          videoContainer.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/G__6yQLs3KQ?si=qJx9kOcHlFcnMrmj&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+          container.classList.add('visible');
+          overlay.removeEventListener('animationend', handler);
+        }
+      });
+    }
+
+
+    function closeVideoOverlay() {
+      const overlay = document.getElementById('videoOverlay');
+      const iframe = document.getElementById('videoFrame');
+      const container = document.getElementById('videoContainer');
+
+
+      container.classList.remove('visible');
+
+      overlay.classList.remove('show');
+      overlay.classList.add('hide');
+
+
+
+      setTimeout(() => {
+        overlay.style.display = 'none';
+        overlay.classList.remove('hide');
+        iframe.src = '';
+      }, 500);
+
+    }
+
+    function goFullscreen() {
+      const container = document.getElementById('videoContainer');
+      container.classList.toggle('maximized');
+    }
+
+
+
+
+    document.getElementById('videoOverlay').addEventListener('click', function (e) {
+      const container = document.getElementById('videoContainer');
+
+
+      if (!container.contains(e.target)) {
+        closeVideoOverlay();
+      }
+    });
+  </script>
+</body>
